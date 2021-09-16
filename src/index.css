@@ -36,18 +36,33 @@ a {
   box-sizing: border-box;
   background-color:black;
 
-  
-  
-
 } 
+h1 {
+  font-family: "ObjectSans-Regular";
+  color: #EBF5DF;
+}
+.designer{
+
+  display:flex;
+  justify-content: start;
+  align-items: center;
+
+  margin-top: 200px;
+  
+  font-size:2rem;
+}
+.navn{
+
+  font-size: 6rem;
+
+}
 .header-content{
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   margin-top: 50px;
-  
   
   font-weight: 400;
 
@@ -56,7 +71,7 @@ a {
 .menu{
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 
   gap: 20px;
