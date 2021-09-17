@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import  sanityClient from "../client.js";
+import sanityClient from "../client.js";
 
 
-export default function Post(){
+export default function Post() {
 
-    const [ postData, setPost ] = useState(null);
+    const [postData, setPost] = useState(null);
 
-    useEffect(()=> {
+    useEffect(() => {
         sanityClient
             .fetch(`*[_type == "post]{
                 title,
@@ -26,14 +26,14 @@ export default function Post(){
     return (
         <main>
             <section>
-                
+
                 <div>
                     <article>
-                        
-                            <span>
-                                
-                            </span>
-                       
+
+                        <span>
+
+                        </span>
+
                     </article>
                 </div>
             </section>
