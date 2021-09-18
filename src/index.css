@@ -75,7 +75,7 @@ h1 {
 
   font-size: 6rem;
 
-  margin-bottom: 350px;
+  margin-bottom: 360px;
 
 }
 .header-content{
@@ -84,33 +84,43 @@ h1 {
   justify-content: space-between;
   align-items: center;
   
+  margin-top: 50px;
   
-  max-width: 1000px;
-  height: 100px;
   
+  margin: 0px auto;
   font-weight: 400;
-
+  
   color: #EBF5DF;
 
-  margin: auto 0;
 }
+.logo{
+  
+  position: relative;
+  float: left;
+  text-decoration: none;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    cursor: pointer;
+
+
+} 
 a:hover{
   
   text-decoration: underline 5px;
   
-}
-.menu{
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  gap: 50px;
-
-  cursor: pointer;
   
-
 }
+a {
+  cursor: pointer;
+}
+
 .header-content, .menu, .logo {
 
   font-family: "ObjectSans-Bold";
@@ -125,7 +135,7 @@ a:hover{
   font-family: "ObjectSans-Regular";
   font-size: 4rem;
  
-  margin-top: 200px;
+  margin-top: 300px;
  
   width:80vw;
   
@@ -160,6 +170,13 @@ a:hover{
     display: flex;
     justify-self: center;
     align-items: center;
+  }
+  button{
+    font-size: 0.5rem;
+    padding: 5px;
+  }
+  .cursor {
+    display: none;
   }
 }
 button{

@@ -5,12 +5,12 @@ import { NavLink } from "react-router-dom";
 export default function NavBar(){
 
     return (
-        <header >
-            <div className="header-content">
+        <header className="header-content">
+            <NavLink className="logo" to="/" exact > 
+                        AKJ
+            </NavLink>
+            <ul className="menu">
                 <nav>
-                    <NavLink to="/" exact > 
-                      <div className="logo">  AKJ </div>
-                    </NavLink>
                     <NavLink to="/post"> 
                         Posts 
                     </NavLink>
@@ -22,7 +22,7 @@ export default function NavBar(){
                     </NavLink>
                     
                 </nav>
-            </div>
+            </ul>
         </header>
     )
 
