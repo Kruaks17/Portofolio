@@ -7,10 +7,9 @@ export default function NavBar(){
     return (
         <header >
             <div className="header-content">
-                <nav >
-                    <ul className="menu">
-                    <NavLink to="/" exact className="logo"> 
-                        AKJ
+                <nav>
+                    <NavLink to="/" exact > 
+                      <div className="logo">  AKJ </div>
                     </NavLink>
                     <NavLink to="/post"> 
                         Posts 
@@ -21,7 +20,7 @@ export default function NavBar(){
                     <NavLink to="/about"> 
                         About
                     </NavLink>
-                    </ul>
+                    
                 </nav>
             </div>
         </header>
