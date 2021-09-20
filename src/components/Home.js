@@ -63,7 +63,9 @@ export default function Home() {
                     Interested in working together? <br></br><br></br>
                     Let me know!</p>
             </section>
+            
             <a tabindex={0} alt="sende meg mail" href="mailto:aksel.kj@hotmail.com" className="contact">Contact me</a>
+            
         </main>
     )
 }

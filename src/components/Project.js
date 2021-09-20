@@ -22,7 +22,10 @@ export default function Project(){
     },[]);
 
     return(
-        <main style={{color:"#EBF5DF"}}>
+        <main style={{color:"#EBF5DF", display:"grid",
+        gridTemplateColumns:"repeat(3, 1fr)", justifyContent:"center",
+        alignContent:"center",
+        }} >
             <section>
                 <h1></h1>
                 <h2></h2>
@@ -37,6 +40,7 @@ export default function Project(){
                                 tabIndex={0}
                                 href={project.link}
                                 alt={project.title}
+                                rel="noreferrer"
                                 target="_blank">
                                 {project.title}
                             </a>
@@ -55,11 +59,14 @@ export default function Project(){
                             <p>
                                 {project.description}
                             </p>
-                            <a href={project.link} target={"_blank"}>
-                                View the Project{""}
+                            <a href={project.link} target={"_blank"} rel="noreferrer">
+                                View the project{""}
                             <span role="img" arialabel="right pointer">
                             </span>
                             </a>
+                            <span style={{fontFamily:"ObjectSans-Thin"}}>
+                                {project.tags}
+                            </span>
                         </div>
                     </article>
                     ))}

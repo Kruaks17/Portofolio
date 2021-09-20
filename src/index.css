@@ -16,6 +16,15 @@
   font-display: swap;
 
 }
+@font-face {
+
+  font-family: "ObjectSans-Thin";
+  src: ("/public/fonts/ObjectSans-Thin.otf");
+  font-style: thin;
+  font-weight: 100;
+  font-display: swap;
+
+}
 
 html,
 body {
