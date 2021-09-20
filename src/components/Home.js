@@ -54,7 +54,7 @@ export default function Home() {
                 <h1 className="navn">Aksel <br></br> Kruse-Jensen</h1>
                  {/* <img className="portrett"style={{width:'100%'}} src={process.env.PUBLIC_URL + '../bildeavmeg.jpeg'} />  */}
             </section>
-            <section className="about-me" >
+            <section className="about-me">
                 <p>I'm Aksel, designer + front-end developer
                     currently looking for a job.<br></br><br></br>
                     At the moment I take pride in building and developing
