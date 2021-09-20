@@ -8,6 +8,8 @@ import React from "react";
 
 export default function Home() {
 
+    
+
     // const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
 
     // const cursorX = useMotionValue(-100);
@@ -61,7 +63,7 @@ export default function Home() {
                     Interested in working together? <br></br><br></br>
                     Let me know!</p>
             </section>
-            <button className="contact">Contact me</button>
+            <a tabindex={0} alt="sende meg mail" href="mailto:aksel.kj@hotmail.com" className="contact">Contact me</a>
         </main>
     )
 }

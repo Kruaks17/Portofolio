@@ -75,7 +75,7 @@ h1 {
 
   font-size: 6rem;
 
-  margin-bottom: 360px;
+  margin-bottom: 280px;
 
 }
 .header-content{
@@ -86,13 +86,8 @@ h1 {
   
   margin-top: 50px;
   
-  
-  margin: 0px auto;
-  font-weight: 400;
-  
   color: #EBF5DF;
 
-  
 }
 .logo{
   
@@ -112,7 +107,6 @@ h1 {
     
 }
 ul{
-
   padding: 10px;
 } 
 a:hover{
@@ -138,10 +132,7 @@ a {
   color: #EBF5DF;
   font-family: "ObjectSans-Regular";
   font-size: 4rem;
- 
-  margin-top: 300px;
- 
-  width:80vw;
+  
   
   scroll-behavior: smooth;
   
@@ -181,6 +172,7 @@ a {
   button{
     font-size: 0.5rem;
     padding: 5px;
+  
   }
   .cursor {
     display: none;
@@ -197,7 +189,8 @@ a {
     
   }
 }
-button{
+
+button, .contact{
 
   color: #EBF5DF;
   font-family: "ObjectSans-Bold";
@@ -211,13 +204,23 @@ button{
 
   padding: 15px;
 
+  text-decoration: none;
+
 }
-button:hover{
+button,.contact:hover{
 
   border: none;
   background-color: #EBF5DF;
   border: #EBF5DF solid 4px;
   color: black;
 
+  text-decoration: none;
   padding: 15px;
+
+  
+}
+
+.contact{
+
+  margin-bottom: 300px;
 }
