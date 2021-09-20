@@ -92,6 +92,7 @@ h1 {
   
   color: #EBF5DF;
 
+  
 }
 .logo{
   
@@ -105,11 +106,14 @@ h1 {
     justify-content: space-between;
     align-items: center;
 
-    gap: 20px;
+    gap: 30px;
 
     cursor: pointer;
+    
+}
+ul{
 
-
+  padding: 10px;
 } 
 a:hover{
   
@@ -125,7 +129,7 @@ a {
 
   font-family: "ObjectSans-Bold";
   
-  
+  gap: 20px;
   font-size: 1.5rem;
 
 }
@@ -148,16 +152,19 @@ a {
   .about-me{
 
     font-size: 2rem;
-    margin-top: 100px;
+    margin-top: 200px;
 
     line-height: 40px;
 
   }
   .designer{
     font-size: 1rem;
+    margin-top: 150px;
+
   }
   .navn {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 200px;
   }
   html,body {
 
@@ -177,6 +184,17 @@ a {
   }
   .cursor {
     display: none;
+  }
+  a:hover{
+
+    text-decoration: underline 3px;
+
+  }
+  button{
+    font-size: 1rem;
+    border: #EBF5DF solid 2px;
+    padding: 10px;
+    
   }
 }
 button{

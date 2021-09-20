@@ -11,13 +11,13 @@ export default function NavBar(){
             </NavLink>
             <ul className="menu">
                 <nav>
-                    <NavLink to="/post"> 
+                    <NavLink style={{padding:"10px"}} to="/post"> 
                         Posts 
                     </NavLink>
-                    <NavLink to="/project"> 
+                    <NavLink style={{padding:"10px"}} to="/project"> 
                         Projects
                     </NavLink>
-                    <NavLink to="/about"> 
+                    <NavLink  style={{padding:"10px"}}to="/about"> 
                         About
                     </NavLink>
                     

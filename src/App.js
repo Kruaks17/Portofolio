@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import { motion, useMotionValue, useSpring } from "framer-motion";
 
 import Home from "./components/Home";
 import About from "./components/About";
