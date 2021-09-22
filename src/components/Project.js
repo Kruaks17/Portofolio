@@ -32,9 +32,7 @@ export default function Project(){
                 <section>
                     {projectData && projectData.map((project, index)=> (
                     <article>
-                        {/* <img>
-                            {project.image}
-                        </img> */}
+                        
                         <h3>
                             <a 
                                 tabIndex={0}
@@ -45,14 +43,16 @@ export default function Project(){
                                 {project.title}
                             </a>
                         </h3>
-
+                        {/* <img>
+                            {project.image}
+                        </img> */}
                         <div>
-                            <span>
+                            {/* <span>
                                 {new Date(project.date).toLocaleDateString()}
                             </span>
                             <span>
                                 {project.place}
-                            </span>
+                            </span> */}
                             <span>
                                 {project.ProjectType}
                             </span>
