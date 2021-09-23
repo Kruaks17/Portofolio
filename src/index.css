@@ -84,7 +84,7 @@ h1 {
 
   font-size: 6rem;
 
-  margin-bottom: 280px;
+  margin-bottom: 200px;
 
 }
 .header-content{
@@ -96,6 +96,11 @@ h1 {
   margin-top: 50px;
   
   color: #EBF5DF;
+
+  
+  
+
+  
 
 }
 .logo{
@@ -144,6 +149,10 @@ a {
   
   
   scroll-behavior: smooth;
+
+  height: 100%;
+
+  
   
  }
 
@@ -197,6 +206,13 @@ a {
     padding: 10px;
     
   }
+  .container-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: none;
+  }
 }
 
 button, .contact{
@@ -232,4 +248,46 @@ button,.contact:hover{
 .contact{
 
   margin-bottom: 300px;
+}
+.container-post{
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: auto ;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 100px;
+
+  width: 70vw;
+  color: #EBF5DF;
+  font-family: "ObjectSans-Regular";
+
+  font-size: 1.5rem;
+
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 100px;
+  margin-bottom: 250px;
+}
+.container h1 {
+
+  font-size: 5rem;
+}
+.portrett {
+
+  filter:  grayscale(100%);
+
+}
+.portrett:hover {
+  
+  filter: grayscale(0);
+  transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  
 }

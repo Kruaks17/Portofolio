@@ -50,9 +50,9 @@ export default function Home() {
                         translateX: cursorX, translateY: cursorY,
                     }}
                 /> */}
-                <h1 className="designer">Designer + Front-end developer</h1>
-                <h1 className="navn">Aksel <br></br> Kruse-Jensen</h1>
-                 {/* <img className="portrett"style={{width:'100%'}} src={process.env.PUBLIC_URL + '../bildeavmeg.jpeg'} />  */}
+                <h1 className="designer">Designer + Front-end developer<br></br>
+                 Aksel Kruse-Jensen</h1>
+                  <img className="portrett"style={{width:'90%'}} src={process.env.PUBLIC_URL + '../DSC04348.jpg'} /> 
             </section>
             <section className="about-me">
                 <p>I'm Aksel, designer + front-end developer

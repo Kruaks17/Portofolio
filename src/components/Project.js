@@ -22,18 +22,15 @@ export default function Project(){
     },[]);
 
     return(
-        <main style={{color:"#EBF5DF", display:"grid",
-        gridTemplateColumns:"repeat(3, 1fr)", justifyContent:"center",
-        alignContent:"center",
-        }} >
-            <section>
+        <main style={{color:"#EBF5DF"}} >
+            <section >
                 <h1></h1>
                 <h2></h2>
-                <section>
+                <section className="container-post">
                     {projectData && projectData.map((project, index)=> (
-                    <article>
+                    <article >
                         
-                        <h3>
+                        <h1>
                             <a 
                                 tabIndex={0}
                                 href={project.link}
@@ -42,24 +39,18 @@ export default function Project(){
                                 target="_blank">
                                 {project.title}
                             </a>
-                        </h3>
+                        </h1>
                         {/* <img>
                             {project.image}
                         </img> */}
-                        <div>
-                            {/* <span>
-                                {new Date(project.date).toLocaleDateString()}
-                            </span>
-                            <span>
-                                {project.place}
-                            </span> */}
+                        <div >
                             <span>
                                 {project.ProjectType}
                             </span>
                             <p>
                                 {project.description}
                             </p>
-                            <a href={project.link} target={"_blank"} rel="noreferrer">
+                            <a tabIndex={0} href={project.link} target={"_blank"} rel="noreferrer">
                                 View the project{""}
                             <span role="img" arialabel="right pointer">
                             </span>
