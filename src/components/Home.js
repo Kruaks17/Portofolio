@@ -8,8 +8,6 @@ import React from "react";
 
 export default function Home() {
 
-    
-
     // const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
 
     // const cursorX = useMotionValue(-100);
@@ -33,11 +31,11 @@ export default function Home() {
     //     }
 
     //     window.addEventListener('mousemove', moveCursor);
-        
+
 
     //     return () => {
     //         window.removeEventListener('mousemove', moveCursor);
-            
+
     //     }
 
     // }, []);
@@ -50,9 +48,14 @@ export default function Home() {
                         translateX: cursorX, translateY: cursorY,
                     }}
                 /> */}
-                <h1 className="designer">Designer + Front-end developer<br></br>
-                 Aksel Kruse-Jensen</h1>
-                  <img className="portrett"style={{width:'90%'}} src={process.env.PUBLIC_URL + '../DSC04348.jpg'} /> 
+                <span>
+                    <h2 style={{ fontFamily: "ObjectSans-Thin" }}
+                        className="designer">Designer + Front-end developer</h2>
+                    <h1 className="navn"> Aksel Kruse-Jensen</h1>
+                </span>
+                <img className="portrett"
+                    style={{ width: '90%' }}
+                    src={process.env.PUBLIC_URL + '../DSC04348.jpg'} />
             </section>
             <section className="about-me">
                 <p>I'm Aksel, designer + front-end developer
@@ -63,8 +66,11 @@ export default function Home() {
                     Interested in working together? <br></br><br></br>
                     Let me know!</p>
             </section>
-            <a tabindex={0} alt="sende meg mail" href="mailto:aksel.kj@hotmail.com" className="contact">Contact me</a>
-            
+            <a tabIndex={0}
+                alt="sende meg mail"
+                href="mailto:aksel.kj@hotmail.com"
+                className="contact">Contact me</a>
+
         </main>
     )
 }

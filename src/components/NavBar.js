@@ -1,29 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom"; 
+import { motion } from 'framer-motion';
+
+
+
 
 
 export default function NavBar(){
 
+
+
+    const [ isOpen, setIsOpen ] =  useState(false);
+
+    const iconVariants = {
+         open: {
+
+            transition: { duration: 0.5 },
+
+         },
+         closed: {
+            
+            transition: { duration: 0.5 },
+        
+        },
+
+    }
+    const popUpVariant = {
+        open: {
+
+            opacity: 1,
+            transition: {duration: 0.5},
+            display: "inline",
+
+        },
+        closed: {
+
+            opacity:0,
+            transition: {duration: 0.5},
+            display: "none"
+
+        }
+    }
+
     return (
-        <header className="header-content">
-            <NavLink className="logo" to="/" exact > 
-                        AKJ
+        <><header className="header-content">
+            <NavLink className="logo" to="/" exact>
+                AKJ
             </NavLink>
-            <ul className="menu">
-                <nav>
-                    <NavLink style={{padding:"10px"}} to="/post"> 
-                        Posts 
-                    </NavLink>
-                    <NavLink style={{padding:"10px"}} to="/project"> 
-                        Projects
-                    </NavLink>
-                    <NavLink  style={{padding:"10px"}}to="/about"> 
-                        About
-                    </NavLink>
-                    
-                </nav>
-            </ul>
-        </header>
+            <motion.button
+                className="menuBtn"
+                initial={false}
+                animate={isOpen ? "open" : "closed"}
+                variants={iconVariants}
+                onClick={() => setIsOpen(state => !state)}
+            > {isOpen ? "Close" : "Menu"}
+            </motion.button>
+
+
+        </header><motion.ul
+            style={{zIndex:"1"}}
+            initial={false}
+            variants={popUpVariant}
+            animate={isOpen ? "open" : "closed"}
+            className="menu">
+
+                <NavLink style={{ padding: "10px" }} to="/post">
+                    Posts
+                </NavLink>
+                <NavLink style={{ padding: "10px" }} to="/project">
+                    Projects
+                </NavLink>
+                <NavLink style={{ padding: "10px" }} to="/about">
+                    About
+                </NavLink>
+
+            </motion.ul></>
     )
 
 }
