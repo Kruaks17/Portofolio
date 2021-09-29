@@ -40,20 +40,22 @@ export default function Home() {
 
     // }, []);
     return (
-        <main>
-            <section className="container">
-                {/* <div className="cursor"
+        <>
+        {/* <div className="cursor"
                     style={{
                         transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0) `,
                         translateX: cursorX, translateY: cursorY,
                     }}
                 /> */}
+        <main>
+            <section className="container">
                 <span>
                     <h2 style={{ fontFamily: "ObjectSans-Thin" }}
                         className="designer">Designer + Front-end developer</h2>
                     <h1 className="navn"> Aksel Kruse-Jensen</h1>
                 </span>
                 <img className="portrett"
+                    alt="portrett bilde"
                     style={{ width: '90%' }}
                     src={process.env.PUBLIC_URL + '../DSC04348.jpg'} />
             </section>
@@ -72,5 +74,6 @@ export default function Home() {
                 className="contact">Contact me</a>
 
         </main>
+        </>
     )
 }

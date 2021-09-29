@@ -1,27 +1,22 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 
+export default function NavBar() {
 
-
-
-export default function NavBar(){
-
-
-
-    const [ isOpen, setIsOpen ] =  useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const iconVariants = {
-         open: {
+        open: {
 
             transition: { duration: 0.5 },
 
-         },
-         closed: {
-            
+        },
+        closed: {
+
             transition: { duration: 0.5 },
-        
+
         },
 
     }
@@ -29,52 +24,54 @@ export default function NavBar(){
         open: {
 
             opacity: 1,
-            transition: {duration: 0.5},
-            display: "inline",
+            transition: { duration: 0 },
+            display: "inline-flex",
+            
 
         },
         closed: {
 
-            opacity:0,
-            transition: {duration: 0.5},
-            display: "none"
+            opacity: 0,
+            transition: { duration: 0 },
+            display: "none",
 
         }
     }
 
     return (
-        <><header className="header-content">
-            <NavLink className="logo" to="/" exact>
-                AKJ
-            </NavLink>
-            <motion.button
-                className="menuBtn"
+        <>
+            <header className="header-content">
+                <NavLink className="logo" to="/" exact>
+                    AKJ
+                </NavLink>
+                <motion.button
+                    className="menuBtn"
+                    initial={false}
+                    animate={isOpen ? "open" : "closed"}
+                    variants={iconVariants}
+                    onClick={() => setIsOpen(state => !state)}
+                > {isOpen ? "Close" : "Menu"}
+
+                </motion.button>
+            </header><motion.ul
+                style={{ zIndex: "1" }}
                 initial={false}
+                variants={popUpVariant}
                 animate={isOpen ? "open" : "closed"}
-                variants={iconVariants}
-                onClick={() => setIsOpen(state => !state)}
-            > {isOpen ? "Close" : "Menu"}
-            </motion.button>
+                className="menu">
 
-
-        </header><motion.ul
-            style={{zIndex:"1"}}
-            initial={false}
-            variants={popUpVariant}
-            animate={isOpen ? "open" : "closed"}
-            className="menu">
-
-                <NavLink style={{ padding: "10px" }} to="/post">
+                <NavLink style={{ padding: "20px" }} to="/post">
                     Posts
                 </NavLink>
-                <NavLink style={{ padding: "10px" }} to="/project">
+                <NavLink style={{ padding: "20px" }} to="/project">
                     Projects
                 </NavLink>
-                <NavLink style={{ padding: "10px" }} to="/about">
+                <NavLink style={{ padding: "20px" }} to="/about">
                     About
                 </NavLink>
+            </motion.ul>
 
-            </motion.ul></>
+        </>
     )
 
 }
