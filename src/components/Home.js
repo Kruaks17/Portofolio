@@ -72,8 +72,13 @@ export default function Home() {
                 alt="sende meg mail"
                 href="mailto:aksel.kj@hotmail.com"
                 className="contact">Contact me</a>
-
         </main>
+        {/* <div ><h1 className="akjsite">AKJ</h1></div> */}
+        <footer> 
+                <p>Instagram</p>
+                <p>LinkedIn</p>
+                <p>Github</p>
+        </footer>
         </>
     )
 }

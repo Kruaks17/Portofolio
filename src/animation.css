@@ -1,6 +1,6 @@
 img {
     animation-duration:2s;
-    animation-name: fadeInAnimation;
+    animation: fadeInAnimation;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     

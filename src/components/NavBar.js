@@ -25,8 +25,8 @@ export default function NavBar() {
 
             opacity: 1,
             transition: { duration: 0 },
-            display: "inline-flex",
-            
+             display: "",
+
 
         },
         closed: {
@@ -51,7 +51,6 @@ export default function NavBar() {
                     variants={iconVariants}
                     onClick={() => setIsOpen(state => !state)}
                 > {isOpen ? "Close" : "Menu"}
-
                 </motion.button>
             </header><motion.ul
                 style={{ zIndex: "1" }}
@@ -59,7 +58,7 @@ export default function NavBar() {
                 variants={popUpVariant}
                 animate={isOpen ? "open" : "closed"}
                 className="menu">
-
+                <section>
                 <NavLink style={{ padding: "20px" }} to="/post">
                     Posts
                 </NavLink>
@@ -69,7 +68,10 @@ export default function NavBar() {
                 <NavLink style={{ padding: "20px" }} to="/about">
                     About
                 </NavLink>
+                </section>
+                
             </motion.ul>
+            
 
         </>
     )

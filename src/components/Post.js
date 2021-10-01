@@ -24,6 +24,7 @@ export default function Post() {
             .catch(console.error);
     }, []);
     return (
+        <>
         <main>
             <section>
                 <div>
@@ -38,7 +39,7 @@ export default function Post() {
                                         alt={post.mainImage.alt}
                                     />
                                     <span>
-                                        <h3></h3>
+                                        
                                     </span>
                                 </span>
                             </Link>
@@ -47,5 +48,6 @@ export default function Post() {
                 </div>
             </section>
         </main>
+        </>
     )
 }
