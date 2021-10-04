@@ -177,6 +177,7 @@ a {
   font-size: 4rem;
   
   
+  scroll-padding-top: 20px;
   scroll-behavior: smooth;
 
   height: 100%;
@@ -374,7 +375,9 @@ justify-content: space-between;
 align-items: center;
 
 margin-top: 100px;
+margin-bottom: 20px;
 
 
+border-top: #EBF5DF solid 4px;
 
 }

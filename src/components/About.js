@@ -3,6 +3,15 @@ import React from "react";
 
 export default function About(){
 
-    return <h1> About Page </h1>
+    return (
+
+
+        <footer> 
+        <p>AKJ</p> 
+       <a href="https://www.instagram.com/akselkj/" target="_blank" ><p>Instagram</p></a>
+       <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank"> <p>LinkedIn</p></a>
+       <a href="https://github.com/Kruaks17" target="_blank"><p>Github</p></a>
+</footer>
+    )
 
 }

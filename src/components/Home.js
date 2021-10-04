@@ -8,6 +8,8 @@ import React from "react";
 
 export default function Home() {
 
+
+
     // const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
 
     // const cursorX = useMotionValue(-100);
@@ -61,7 +63,7 @@ export default function Home() {
             </section>
             <section className="about-me">
                 <p>I'm Aksel, designer + front-end developer
-                    currently looking for a job.<br></br><br></br>
+                    currently based in Oslo, Norway.<br></br><br></br>
                     At the moment I take pride in building and developing
                     websites, digital design, brand indetity, editorial design + packaging design.
                     <br></br><br></br>
@@ -75,9 +77,10 @@ export default function Home() {
         </main>
         {/* <div ><h1 className="akjsite">AKJ</h1></div> */}
         <footer> 
-                <p>Instagram</p>
-                <p>LinkedIn</p>
-                <p>Github</p>
+                 <p>AKJ</p> 
+                <a href="https://www.instagram.com/akselkj/" target="_blank" ><p>Instagram</p></a>
+                <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank"> <p>LinkedIn</p></a>
+                <a href="https://github.com/Kruaks17" target="_blank"><p>Github</p></a>
         </footer>
         </>
     )
