@@ -8,7 +8,7 @@ export default function Project(){
     useEffect (() =>{
 
         sanityClient.fetch(`*[_type == "project"]{
-            image,
+            Image,
             title,
             date,
             place,
@@ -23,14 +23,13 @@ export default function Project(){
 
     return(
         <>
-        <main style={{color:"#EBF5DF"}} >
+        <main  style={{color:"#EBF5DF"}} >
             <section >
                 <h1></h1>
                 <h2></h2>
                 <section className="container-post">
                     {projectData && projectData.map((project, index)=> (
                     <article >
-                        
                         <h1>
                             <a 
                                 tabIndex={0}
@@ -41,9 +40,7 @@ export default function Project(){
                                 {project.title}
                             </a>
                         </h1>
-                        {/* <img>
-                            {project.image}
-                        </img> */}
+                        
                         <div >
                             <span>
                                 {project.ProjectType}
@@ -64,13 +61,14 @@ export default function Project(){
                     ))}
                 </section>
             </section>
-        </main>
-         <footer> 
-         <p>AKJ</p> 
-        <a href="https://www.instagram.com/akselkj/" target="_blank" ><p>Instagram</p></a>
-        <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank"> <p>LinkedIn</p></a>
-        <a href="https://github.com/Kruaks17" target="_blank"><p>Github</p></a>
+            <footer> 
+         
+        <a href="https://www.instagram.com/akselkj/" target="_blank" rel="noreferrer" alt="link til instagram"><p>Instagram</p></a>
+        <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank" rel="noreferrer" alt="link til linkedin"> <p>LinkedIn</p></a>
+        <a href="https://github.com/Kruaks17" target="_blank" rel="noreferrer" alt="link til github"><p>Github</p></a>
         </footer>
+        </main>
+        
         </>
     )
 

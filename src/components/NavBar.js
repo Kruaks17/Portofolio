@@ -60,13 +60,13 @@ export default function NavBar() {
                 className="menu">
                 <section>
                 <NavLink style={{ padding: "20px" }} to="/post">
-                    Posts
+                    Posts .
                 </NavLink>
                 <NavLink style={{ padding: "20px" }} to="/project">
-                    Projects
+                    Projects .
                 </NavLink>
                 <NavLink style={{ padding: "20px" }} to="/about">
-                    About
+                    About .
                 </NavLink>
                 </section>
                 

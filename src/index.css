@@ -269,6 +269,13 @@ a {
     align-items: center;
 
   }
+  footer{
+
+    font-size: 1rem;
+    border-top: #EBF5DF solid 2px;
+
+
+  }
   
 }
 
