@@ -27,7 +27,7 @@ export default function Post() {
         <>
         <main>
             <section>
-                <div>
+                <div className="container-post">
                     {postData && postData.map((post, index) => (
                         <article>
                             <Link
@@ -49,10 +49,10 @@ export default function Post() {
             </section>
         </main>
         <footer> 
-                 <p>AKJ</p> 
-                <a href="https://www.instagram.com/akselkj/" target="_blank" ><p>Instagram</p></a>
-                <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank"> <p>LinkedIn</p></a>
-                <a href="https://github.com/Kruaks17" target="_blank"><p>Github</p></a>
+                
+                 <a href="https://www.instagram.com/akselkj/" target="_blank" rel="noreferrer" alt="link til instagram"><p>Instagram</p></a>
+                 <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank" rel="noreferrer" alt="link til linkedin"> <p>LinkedIn</p></a>
+                 <a href="https://github.com/Kruaks17" target="_blank" rel="noreferrer" alt="link til github"><p>Github</p></a>
         </footer>
         </>
     )
