@@ -43,6 +43,7 @@ export default function Home() {
     // }, []);
     return (
         <>
+        <title>Portofolio</title>
         {/* <div className="cursor"
                     style={{
                         transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0) `,

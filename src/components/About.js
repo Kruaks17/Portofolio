@@ -4,6 +4,8 @@ import React from "react";
 export default function About(){
 
     return (
+        <>
+        <title>About</title>
 
 
         <footer> 
@@ -12,6 +14,7 @@ export default function About(){
         <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank" rel="noreferrer" alt="link til linkedin"> <p>LinkedIn</p></a>
         <a href="https://github.com/Kruaks17" target="_blank" rel="noreferrer" alt="link til github"><p>Github</p></a>
 </footer>
+        </>
     )
 
 }
