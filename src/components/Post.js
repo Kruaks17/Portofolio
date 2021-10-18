@@ -25,35 +25,33 @@ export default function Post() {
     }, []);
     return (
         <>
-        <main>
-            <section>
-                <div className="container-post">
-                    {postData && postData.map((post, index) => (
-                        <article>
-                            <Link
-                                to={/post/ + post.slug.current}
-                                key={post.slug.current}>
-                                <span key={index}>
-                                    <img
-                                        src={post.mainImage.asset.url}
-                                        alt={post.mainImage.alt}
-                                    />
-                                    <span>
-                                        
+            <main>
+                <section>
+                    <div className="container-post">
+                        {postData && postData.map((post, index) => (
+                            <article>
+                                <Link
+                                    to={/post/ + post.slug.current}
+                                    key={post.slug.current}>
+                                    <span key={index}>
+                                        <img
+                                            src={post.mainImage.asset.url}
+                                            alt={post.mainImage.alt}
+                                        />
+                                        <span>
+                                        </span>
                                     </span>
-                                </span>
-                            </Link>
-                        </article>
-                    ))}
-                </div>
-            </section>
-        </main>
-        <footer> 
-                
-                 <a href="https://www.instagram.com/akselkj/" target="_blank" rel="noreferrer" alt="link til instagram"><p>Instagram</p></a>
-                 <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank" rel="noreferrer" alt="link til linkedin"> <p>LinkedIn</p></a>
-                 <a href="https://github.com/Kruaks17" target="_blank" rel="noreferrer" alt="link til github"><p>Github</p></a>
-        </footer>
+                                </Link>
+                            </article>
+                        ))}
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <a href="https://www.instagram.com/akselkj/" target="_blank" rel="noreferrer" alt="link til instagram"><p>Instagram</p></a>
+                <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank" rel="noreferrer" alt="link til linkedin"><p>LinkedIn</p></a>
+                <a href="https://github.com/Kruaks17" target="_blank" rel="noreferrer" alt="link til github"><p>Github</p></a>
+            </footer>
         </>
     )
 }
