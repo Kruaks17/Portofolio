@@ -50,7 +50,7 @@ export default function NavBar() {
                     animate={isOpen ? "open" : "closed"}
                     variants={iconVariants}
                     onClick={() => setIsOpen(state => !state)}
-                > {isOpen ? "Close" : "Menu"}
+                > {isOpen ? "Lukk" : "Meny"}
                 </motion.button>
             </header><motion.ul
                 style={{ zIndex: "1" }}
@@ -60,13 +60,13 @@ export default function NavBar() {
                 className="menu">
                 <section>
                 <NavLink style={{ padding: "20px" }} to="/post">
-                    Posts .
+                    Innlegg
                 </NavLink>
                 <NavLink style={{ padding: "20px" }} to="/project">
-                    Projects .
+                    Prosjekter
                 </NavLink>
                 <NavLink style={{ padding: "20px" }} to="/about">
-                    About .
+                    Om meg
                 </NavLink>
                 </section>
                 

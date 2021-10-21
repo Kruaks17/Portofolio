@@ -53,8 +53,8 @@ export default function Home() {
         <main>
             <section className="container">
                 <span>
-                    <h2 style={{ fontFamily: "ObjectSans-Thin" }}
-                        className="designer">Designer + Front-end developer</h2>
+                    <h2 style={{ fontFamily: "ObjectSans-Regular" }}
+                        className="designer">Designer + Front-end utvikler</h2>
                     <h1 className="navn"> Aksel Kruse-Jensen</h1>
                 </span>
                 <img className="portrett"
@@ -63,21 +63,19 @@ export default function Home() {
                     src={process.env.PUBLIC_URL + '../DSC04348.jpg'} />
             </section>
             <section className="about-me">
-                <p>I'm Aksel, designer + front-end developer
-                    currently based in Oslo, Norway.<br></br><br></br>
-                    At the moment I take pride in building and developing
-                    websites, digital design, brand indetity, editorial design + packaging design.
+                <p> Hei jeg er Aksel, designer + front-end utvikler
+                    som holder til i Oslo.<br></br><br></br>
+                    For øyeblikket er jeg stolt over å bygge og utvikle nettsteder, digital design, visuell identitet, redaksjonelt design + emballasjedesign.
                     <br></br><br></br>
-                    Interested in working together? <br></br><br></br>
-                    Let me know!</p>
+                    Interessert i å jobbe sammen? <br></br><br></br>
+                    Gi meg bedskjed!</p>
             </section>
-            <a tabIndex={0}
+            <a  tabIndex={0}
                 alt="sende meg mail"
                 href="mailto:aksel.kj@hotmail.com"
-                className="contact">Contact me</a>
+                className="contact">Kontakt meg</a>
         </main>
         <footer> 
-                
         <a href="https://www.instagram.com/akselkj/" target="_blank" rel="noreferrer" alt="link til instagram"><p>Instagram</p></a>
         <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank" rel="noreferrer" alt="link til linkedin"> <p>LinkedIn</p></a>
         <a href="https://github.com/Kruaks17" target="_blank" rel="noreferrer" alt="link til github"><p>Github</p></a>
