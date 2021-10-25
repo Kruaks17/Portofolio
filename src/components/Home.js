@@ -65,7 +65,7 @@ export default function Home() {
             <section className="about-me">
                 <p> Hei jeg er Aksel, designer + front-end utvikler
                     som holder til i Oslo.<br></br><br></br>
-                    For øyeblikket er jeg stolt over å bygge og utvikle nettsteder, digital design, visuell identitet, redaksjonelt design + emballasjedesign.
+                    For øyeblikket holder jeg på med å bygge og utvikle nettsteder, digital design, visuell identitet, redaksjonelt design + emballasjedesign.
                     <br></br><br></br>
                     Interessert i å jobbe sammen? <br></br><br></br>
                     Gi meg bedskjed!</p>
