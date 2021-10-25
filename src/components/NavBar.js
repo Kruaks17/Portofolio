@@ -54,7 +54,7 @@ export default function NavBar() {
                 </motion.button>
             </header><motion.ul
                 style={{ zIndex: "1" }}
-                initial={false}
+                initial={false} 
                 variants={popUpVariant}
                 animate={isOpen ? "open" : "closed"}
                 className="menu">
