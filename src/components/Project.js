@@ -41,6 +41,7 @@ export default function Project(){
                             </a>
                         </h1>
                         
+                        
                         <div >
                             <span>
                                 {project.ProjectType}

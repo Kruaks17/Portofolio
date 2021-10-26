@@ -272,7 +272,6 @@ a {
     font-size: 1rem;
     border-top: #EBF5DF solid 2px;
 
-
   }
   
 }
@@ -324,7 +323,6 @@ button,.contact:hover{
   color: #EBF5DF;
   font-family: "ObjectSans-Regular";
 
-
   font-size: 1.5rem;
 
 }
@@ -370,24 +368,24 @@ button,.contact:hover{
 }
 footer {
 
-color:#EBF5DF;
-font-family: "ObjectSans-Bold";
-font-size: 1.5rem;
+  color:#EBF5DF;
+  font-family: "ObjectSans-Bold";
+  font-size: 1.5rem;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-margin-bottom: 0;
+  margin-bottom: 0;
 
-margin-top: 100px;
+  margin-top: 100px;
 
-border-top: #EBF5DF solid 4px;
+  border-top: #EBF5DF solid 4px;
 
 }
 .about-container {
 
-  margin-top: 100px;
+  margin-top: 180px;
   
   display: grid;
   grid-template-columns: repeat(2, 1fr);

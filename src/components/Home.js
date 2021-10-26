@@ -68,7 +68,8 @@ export default function Home() {
                     For øyeblikket holder jeg på med å bygge og utvikle nettsteder, digital design, visuell identitet, redaksjonelt design + emballasjedesign.
                     <br></br><br></br>
                     Interessert i å jobbe sammen? <br></br><br></br>
-                    Gi meg bedskjed!</p>
+                    Gi meg beskjed!</p>
+                    
             </section>
             <a  tabIndex={0}
                 alt="sende meg mail"

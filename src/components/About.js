@@ -14,7 +14,7 @@ export default function About() {
                             For å bli mer fleksibel som designer tok jeg årsstudiumet Front-end utvikling hos Fagskolen Kristiania. Der avsluttet jeg i juni 2021.
                             Jeg trives godt med å bygge og utvikle nettsider,  visuell identitet, redaksjonellt design og pakkningdesing.</p>
 
-                        <h1>Utdanning</h1>
+                        <h1 style={{fontSize:"2rem"}}> Utdanning </h1>
                         <p>
                             2020 - 2021 ¬ <br></br>
                             Årsstudium i front-end utvikling hos Fagskolen Kristiania. <br></br>
@@ -25,7 +25,7 @@ export default function About() {
                             2017 - 2020 ¬ <br></br>
                             Bachelor i Grafisk Design hos Westerdals.
                         </p>
-                        <h1>Erfaring</h1>
+                        <h1 style={{fontSize:"2rem"}}>Erfaring</h1>
                         <p>
                             December 2019 - Mars 2020 ¬ <br></br>
                             Praksisplass hos Melkeveien Designkontor AS <br></br>
