@@ -1,9 +1,42 @@
 import React, { useEffect, useState } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 import sanityClient  from "../client.js";
 
 export default function Project(){
     const [ projectData, setProjectData ] = useState(null);
+
+    const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
+
+     const cursorX = useMotionValue(-100);
+     const cursorY = useMotionValue(-100);
+
+     const springConfig = { damping: 30, stiffness: 800 };
+     const cursorXSpring = useSpring(cursorX, springConfig);
+     const cursorYSpring = useSpring(cursorY, springConfig);
+
+     useEffect(() => {
+
+         const moveCursor = (e) => {
+
+             cursorX.set(e.clientX - 16)
+            cursorY.set(e.clientY - 16)
+
+             const x = e.clientX - 16
+            const y = e.clientY - 16
+             setCursorXY({ x, y })
+
+         }
+
+         window.addEventListener('mousemove', moveCursor);
+
+
+        return () => {
+             window.removeEventListener('mousemove', moveCursor);
+
+         }
+
+     }, []);
 
     useEffect (() =>{
 
@@ -24,6 +57,12 @@ export default function Project(){
     return(
         <>
         <main  style={{color:"#EBF5DF"}} >
+        <div className="cursor"
+                    style={{
+                        transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0) `,
+                        translateX: cursorX, translateY: cursorY,
+                    }}
+                /> 
             <section >
                 <h1></h1>
                 <h2></h2>

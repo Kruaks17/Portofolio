@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-// import { motion, useMotionValue, useSpring } from "framer-motion";
+ import { motion, useMotionValue, useSpring } from "framer-motion";
 
 
 
@@ -10,46 +10,46 @@ export default function Home() {
 
 
 
-    // const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
+     const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
 
-    // const cursorX = useMotionValue(-100);
-    // const cursorY = useMotionValue(-100);
+     const cursorX = useMotionValue(-100);
+     const cursorY = useMotionValue(-100);
 
-    // const springConfig = { damping: 30, stiffness: 800 };
-    // const cursorXSpring = useSpring(cursorX, springConfig);
-    // const cursorYSpring = useSpring(cursorY, springConfig);
+     const springConfig = { damping: 30, stiffness: 800 };
+     const cursorXSpring = useSpring(cursorX, springConfig);
+     const cursorYSpring = useSpring(cursorY, springConfig);
 
-    // useEffect(() => {
+     useEffect(() => {
 
-    //     const moveCursor = (e) => {
+         const moveCursor = (e) => {
 
-    //         cursorX.set(e.clientX - 16)
-    //         cursorY.set(e.clientY - 16)
+             cursorX.set(e.clientX - 16)
+            cursorY.set(e.clientY - 16)
 
-    //         const x = e.clientX - 16
-    //         const y = e.clientY - 16
-    //         setCursorXY({ x, y })
+             const x = e.clientX - 16
+            const y = e.clientY - 16
+             setCursorXY({ x, y })
 
-    //     }
+         }
 
-    //     window.addEventListener('mousemove', moveCursor);
+         window.addEventListener('mousemove', moveCursor);
 
 
-    //     return () => {
-    //         window.removeEventListener('mousemove', moveCursor);
+        return () => {
+             window.removeEventListener('mousemove', moveCursor);
 
-    //     }
+         }
 
-    // }, []);
+     }, []);
     return (
         <>
         <title>Portofolio</title>
-        {/* <div className="cursor"
+         <div className="cursor"
                     style={{
                         transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0) `,
                         translateX: cursorX, translateY: cursorY,
                     }}
-                /> */}
+                /> 
         <main>
             <section className="container">
                 <span>
@@ -69,7 +69,7 @@ export default function Home() {
                     <br></br><br></br>
                     Interessert i å jobbe sammen? <br></br><br></br>
                     Gi meg beskjed!</p>
-                    
+
             </section>
             <a  tabIndex={0}
                 alt="sende meg mail"
