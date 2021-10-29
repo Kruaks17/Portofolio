@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import {  useMotionValue, useSpring } from "framer-motion";
 
 import sanityClient  from "../client.js";
 

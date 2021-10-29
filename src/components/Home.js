@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
- import { motion, useMotionValue, useSpring } from "framer-motion";
+ import {  useMotionValue, useSpring } from "framer-motion";
 
 
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState} from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import {  useMotionValue, useSpring } from "framer-motion";
 
 export default function About() {
 
-    const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
+     const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
 
      const cursorX = useMotionValue(-100);
      const cursorY = useMotionValue(-100);
@@ -13,26 +13,19 @@ export default function About() {
      const cursorYSpring = useSpring(cursorY, springConfig);
 
      useEffect(() => {
-
          const moveCursor = (e) => {
-
              cursorX.set(e.clientX - 16)
-            cursorY.set(e.clientY - 16)
+             cursorY.set(e.clientY - 16)
 
              const x = e.clientX - 16
-            const y = e.clientY - 16
+             const y = e.clientY - 16
              setCursorXY({ x, y })
 
          }
-
-         window.addEventListener('mousemove', moveCursor);
-
-
+          window.addEventListener('mousemove', moveCursor);
         return () => {
              window.removeEventListener('mousemove', moveCursor);
-
          }
-
      }, []);
 
 
@@ -80,17 +73,14 @@ export default function About() {
 
                     <div>
                         <img className="portrett"
-                            alt="portrett bilde"
-                            style={{ width: '100%' }}
-                            src={process.env.PUBLIC_URL + '../DSC04348.jpg'} />
+                             alt="portrett bilde"
+                             style={{ width: '100%' }}
+                             src={process.env.PUBLIC_URL + '../DSC04348.jpg'} />
 
                     </div>
 
                 </section>
             </main>
-
-
-
             <footer>
                 <a href="https://www.instagram.com/akselkj/" target="_blank" rel="noreferrer" alt="link til instagram"><p>Instagram</p></a>
                 <a href="https://www.linkedin.com/in/aksel-kruse-jensen-4a862a1a1/" target="_blank" rel="noreferrer" alt="link til linkedin"> <p>LinkedIn</p></a>

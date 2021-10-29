@@ -52,7 +52,8 @@ export default function NavBar() {
                     onClick={() => setIsOpen(state => !state)}
                 > {isOpen ? "Lukk" : "Meny"}
                 </motion.button>
-            </header><motion.ul
+            </header>
+            <motion.ul
                 style={{ zIndex: "1" }}
                 initial={false} 
                 variants={popUpVariant}
