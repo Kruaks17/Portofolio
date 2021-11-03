@@ -9,8 +9,8 @@ export default function About() {
      const cursorY = useMotionValue(-100);
 
      const springConfig = { damping: 80, stiffness: 800 };
-     const cursorXSpring = useSpring(cursorX, springConfig);
-     const cursorYSpring = useSpring(cursorY, springConfig);
+    //  const cursorXSpring = useSpring(cursorX, springConfig);
+    //  const cursorYSpring = useSpring(cursorY, springConfig);
 
      useEffect(() => {
          const moveCursor = (e) => {
@@ -50,7 +50,7 @@ export default function About() {
                         <p>
                             2020 - 2021 ¬ <br></br>
                             Årsstudium i front-end utvikling hos Fagskolen Kristiania. <br></br>
-                            Lært koding i JavScript, HTML, CSS og React. Har også lært WCAG og universell utforming.
+                            - Lært koding i JavScript, HTML, CSS og React. Har også lært WCAG og universell utforming.
                         </p>
                         <span></span>
                         <p>
@@ -61,12 +61,12 @@ export default function About() {
                         <p>
                             December 2019 - Mars 2020 ¬ <br></br>
                             Praksisplass hos Melkeveien Designkontor AS <br></br>
-                            Praksis som en del av bachelorgraden. Jobb som grafisk designer.
+                            - Praksis som en del av bachelorgraden. Jobb som grafisk designer.
                         </p>
                         <p>
                             Oktober 2019 - Desember 2019 ¬ <br></br>
                             Praktikant hos Melkeveien Designkontor AS <br></br>
-                            Jobb som grafisk designer ved siden av skole.
+                            - Jobb som grafisk designer ved siden av skole.
                         </p>
 
                     </div>
