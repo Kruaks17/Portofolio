@@ -232,8 +232,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    margin-left: 0;
 
-    width: none;
+    width: 60vw;
   }
   .container {
 
@@ -305,14 +307,14 @@ button,.contact:hover{
 .container-post{
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: start;
   align-items: center;
 
-  margin-top: 100px;
+  margin-top: 150px;
 
-  width: 70vw;
+  
+  
   color: #EBF5DF;
   font-family: "ObjectSans-Regular";
 

@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { useMotionValue, useSpring } from "framer-motion";
+import { useMotionValue } from "framer-motion";
 
 // import sanityClient  from "../client.js";
 
 export default function Project() {
-    const [projectData, setProjectData] = useState(null);
+    // const [projectData, setProjectData] = useState(null);
 
     const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 });
 
     const cursorX = useMotionValue(-100);
     const cursorY = useMotionValue(-100);
 
-    const springConfig = { damping: 30, stiffness: 800 };
+    // const springConfig = { damping: 30, stiffness: 800 };
     //  const cursorXSpring = useSpring(cursorX, springConfig);
     //  const cursorYSpring = useSpring(cursorY, springConfig);
 
@@ -63,59 +63,57 @@ export default function Project() {
                         translateX: cursorX, translateY: cursorY,
                     }}
                 />
-                <section >
-                    <section className="container-post">
+                <section className="container-post">
+                   
                     
                     <div>
                     <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
-                             style={{ width: '80%' }}
+                             style={{ width: '70%' }}
                              src={process.env.PUBLIC_URL + '../BB.png'} />
                     <h1>Børres Burger</h1>
-                    <p style={{fontFamily:"ObjectSans-Thin", fontSize:"1rem"}}>Nettside</p>    
+                    <p style={{fontFamily:"ObjectSans-Thin"}}>Nettside</p>    
                     </div>
                     <div>
                     <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
-                             style={{ width: '80%' }}
-                             src={process.env.PUBLIC_URL + '../Cimera_.png'} />
+                             style={{ width: '70%' }}
+                         src={process.env.PUBLIC_URL + '../Cimera_.png'} />
                     <h1>Cimera_</h1>
-                    <p style={{fontFamily:"ObjectSans-Thin", fontSize:"1rem"}}>Nettside</p>
+                    <p style={{fontFamily:"ObjectSans-Thin"}}>Nettside</p>
                     </div>
                     <div>
                     <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
-                             style={{ width: '80%' }}
-                             src={process.env.PUBLIC_URL + '../PP.png'} />
+                             style={{ width: '70%' }}
+                         src={process.env.PUBLIC_URL + '../PP.png'} />
                     <h1>Paragraph Paragraph</h1>
-                    <p style={{fontFamily:"ObjectSans-Thin", fontSize:"1rem"}}>Nettside</p>
+                    <p style={{fontFamily:"ObjectSans-Thin"}}>Nettside</p>
                     </div>
                     <div>
                     <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
-                             style={{ width: '80%' }}
+                             style={{ width: '70%' }}
                              src={process.env.PUBLIC_URL + '../Artboard 1.jpg'} />
                     <h1>North Men</h1>
-                    <p style={{fontFamily:"ObjectSans-Thin", fontSize:"1rem"}}>Pakkningdesign</p>
+                    <p style={{fontFamily:"ObjectSans-Thin"}}>Pakkningdesign</p>
                     </div>
                     <div>
                     <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
-                             style={{ width: '80%' }}
+                             style={{ width: '70%' }}
                              src={process.env.PUBLIC_URL + '../Photolouge.jpg'} />
                     <h1>Photolouge.</h1>
-                    <p style={{fontFamily:"ObjectSans-Thin", fontSize:"1rem"}}>Redaksjonellt design</p>
+                    <p style={{fontFamily:"ObjectSans-Thin"}}>Redaksjonellt design</p>
                     </div>
                     <div>
                     <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
-                             style={{ width: '80%' }}
+                             style={{ width: '70%' }}
                              src={process.env.PUBLIC_URL + '../Kinetic-Animation_v2.gif'} />
                     <h1>Animasjon</h1>
-                    <p style={{fontFamily:"ObjectSans-Thin", fontSize:"1rem"}}>After Effects</p>
+                    <p style={{fontFamily:"ObjectSans-Thin"}}>After Effects</p>
                     </div>
-
-                    </section>
                 </section>
 
             </main>
