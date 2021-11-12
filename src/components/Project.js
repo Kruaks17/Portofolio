@@ -67,7 +67,7 @@ export default function Project() {
                    
                     
                     <div>
-                    <img className="prosjekt-bilde"
+                    {/* <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
                              style={{ width: '70%' }}
                              src={process.env.PUBLIC_URL + '../BB.png'} />
@@ -112,7 +112,7 @@ export default function Project() {
                              style={{ width: '70%' }}
                              src={process.env.PUBLIC_URL + '../Kinetic-Animation_v2.gif'} />
                     <h1>Animasjon</h1>
-                    <p style={{fontFamily:"ObjectSans-Thin"}}>After Effects</p>
+                    <p style={{fontFamily:"ObjectSans-Thin"}}>After Effects</p> */}
                     </div>
                 </section>
 

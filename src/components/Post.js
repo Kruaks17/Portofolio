@@ -26,7 +26,7 @@ export default function Post() {
     return (
         <>
             <main>
-                <section>
+                <section className="container-post">
                     <div >
                         {postData && postData.map((post, index) => (
                             <article>
