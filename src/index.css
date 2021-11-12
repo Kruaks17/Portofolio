@@ -308,12 +308,12 @@ button,.contact:hover{
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 
   margin-top: 150px;
 
-  
+  margin-left: 150px;
   
   color: #EBF5DF;
   font-family: "ObjectSans-Regular";

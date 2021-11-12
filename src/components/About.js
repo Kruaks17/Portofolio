@@ -76,7 +76,6 @@ export default function About() {
                              alt="portrett bilde"
                              style={{ width: '100%' }}
                              src={process.env.PUBLIC_URL + '../DSC04348.jpg'} />
-
                     </div>
 
                 </section>

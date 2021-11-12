@@ -12,8 +12,8 @@ export default function Project() {
     const cursorY = useMotionValue(-100);
 
     // const springConfig = { damping: 30, stiffness: 800 };
-    //  const cursorXSpring = useSpring(cursorX, springConfig);
-    //  const cursorYSpring = useSpring(cursorY, springConfig);
+    // const cursorXSpring = useSpring(cursorX, springConfig);
+    // const cursorYSpring = useSpring(cursorY, springConfig);
 
     useEffect(() => {
 
@@ -94,7 +94,7 @@ export default function Project() {
                     <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
                              style={{ width: '70%' }}
-                             src={process.env.PUBLIC_URL + '../Artboard 1.jpg'} />
+                         src={process.env.PUBLIC_URL + '../Artboard 1.jpg'} />
                     <h1>North Men</h1>
                     <p style={{fontFamily:"ObjectSans-Thin"}}>Pakkningdesign</p>
                     </div>
@@ -102,7 +102,7 @@ export default function Project() {
                     <img className="prosjekt-bilde"
                              alt="prosjekt-bilde"
                              style={{ width: '70%' }}
-                             src={process.env.PUBLIC_URL + '../Photolouge.jpg'} />
+                         src={process.env.PUBLIC_URL + '../Photolouge.jpg'} />
                     <h1>Photolouge.</h1>
                     <p style={{fontFamily:"ObjectSans-Thin"}}>Redaksjonellt design</p>
                     </div>

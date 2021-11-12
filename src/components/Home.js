@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 
- import {  useMotionValue, useSpring } from "framer-motion";
-
-
-
-
+import {  useMotionValue, useSpring } from "framer-motion";
 
 export default function Home() {
 
